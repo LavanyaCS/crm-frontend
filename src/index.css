@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+/* Optional index.css */
+.react-calendar__tile.bg-green-300 {
+  background-color: #86efac !important;
+}
+.bg-image{
+  background: url('assets/home.png');
+}
+button{
+  cursor: pointer;
+}
+  @layer utilities {
+  .animate-fadeIn {
+    @apply scale-100 opacity-100;
+    animation: fadeInScale 0.3s ease-out forwards;
+  }
+
+  @keyframes fadeInScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
