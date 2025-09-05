@@ -1,1 +1,1 @@
-export const baseUrl = "http://localhost:8081"
+export const baseUrl = "https://crm-backend-mern.onrender.com"
